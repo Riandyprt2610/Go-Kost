@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GoKost - Cari Kos Mudah & Terpercaya</title>
+    <title>GoKost - Cari Kos Mudah & Terpercaya di Surabaya</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <style>
         * {
@@ -116,8 +116,8 @@
 
         .btn-secondary {
             background: transparent;
-            color: white;
-            border: 2px solid white;
+            color: #333;
+            border: 2px solid #333;
         }
 
         .btn:hover {
@@ -125,15 +125,15 @@
             box-shadow: 0 5px 15px rgba(0,0,0,0.2);
         }
 
-        /* Why GoKost Section */
-        .why-gokost {
-            padding: 80px 2rem;
-            background: #f8f9fa;
-        }
-
+        /* Container */
         .container {
             max-width: 1200px;
             margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        .section {
+            padding: 80px 0;
         }
 
         .section-title {
@@ -141,6 +141,11 @@
             font-size: 2.5rem;
             margin-bottom: 3rem;
             color: #333;
+        }
+
+        /* Why GoKost Section */
+        .why-gokost {
+            background: #f8f9fa;
         }
 
         .features-grid {
@@ -182,7 +187,6 @@
 
         /* Services Section */
         .services {
-            padding: 80px 2rem;
             background: white;
         }
 
@@ -215,10 +219,300 @@
             margin-bottom: 1rem;
         }
 
+        /* Form Styles */
+        .form-container {
+            background: white;
+            padding: 3rem;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            margin: 2rem 0;
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+            color: #333;
+        }
+
+        .form-control {
+            width: 100%;
+            padding: 12px 15px;
+            border: 2px solid #e1e5e9;
+            border-radius: 10px;
+            font-size: 1rem;
+            transition: border-color 0.3s ease;
+        }
+
+        .form-control:focus {
+            outline: none;
+            border-color: #667eea;
+        }
+
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+        }
+
+        .checkbox-group {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+        }
+
+        .checkbox-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .checkbox-item input {
+            transform: scale(1.2);
+        }
+
+        /* Konsultasi Section */
+        .konsultasi {
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            color: white;
+        }
+
+        .konsultasi .section-title {
+            color: white;
+        }
+
+        .result-box {
+            background: rgba(255,255,255,0.1);
+            padding: 2rem;
+            border-radius: 15px;
+            margin-top: 2rem;
+            backdrop-filter: blur(10px);
+            display: none;
+            text-align: left;
+        }
+
+        .result-box h3 {
+            color: white;
+            margin-bottom: 1rem;
+        }
+
+        .result-box p {
+            color: white;
+        }
+
+        /* Survei Section */
+        .survei {
+            background: #f8f9fa;
+        }
+
+        .process-steps {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+
+        .step-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            text-align: center;
+            position: relative;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .step-number {
+            background: #667eea;
+            color: white;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            margin: 0 auto 1rem;
+        }
+
+        .price-card {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 2rem;
+            border-radius: 15px;
+            text-align: center;
+            margin: 1rem;
+        }
+
+        .price {
+            font-size: 2rem;
+            font-weight: bold;
+            margin: 1rem 0;
+        }
+
+        /* Premium Section */
+        .premium {
+            background: linear-gradient(135deg, #ffd700 0%, #ffb347 100%);
+        }
+
+        .premium-features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .premium-card {
+            background: rgba(255,255,255,0.9);
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        /* Cari Kost Section */
+        .cari-kost {
+            background: white;
+        }
+
+        .search-container {
+            background: #f8f9fa;
+            padding: 2rem;
+            border-radius: 15px;
+            margin-bottom: 3rem;
+        }
+
+        .filter-row {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        .kost-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+        }
+
+        .kost-card {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .kost-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .kost-image {
+            height: 200px;
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 3rem;
+        }
+
+        .kost-content {
+            padding: 1.5rem;
+        }
+
+        .kost-title {
+            font-size: 1.2rem;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+        }
+
+        .kost-price {
+            color: #667eea;
+            font-size: 1.1rem;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+        }
+
+        .kost-features {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin: 1rem 0;
+        }
+
+        .feature-tag {
+            background: #e3f2fd;
+            color: #1976d2;
+            padding: 0.3rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+        }
+
+        .verified-badge {
+            background: #4caf50;
+            color: white;
+            padding: 0.3rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            display: inline-block;
+            margin-bottom: 1rem;
+        }
+
+        .kost-actions {
+            display: flex;
+            gap: 0.5rem;
+        }
+
+        .btn-sm {
+            padding: 8px 16px;
+            font-size: 0.9rem;
+            border-radius: 20px;
+        }
+
+        /* About Section */
+        .about {
+            background: #f8f9fa;
+        }
+
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: center;
+        }
+
+        .about-text {
+            font-size: 1.1rem;
+            line-height: 1.8;
+        }
+
+        .values-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+
+        .value-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .value-icon {
+            font-size: 2.5rem;
+            color: #667eea;
+            margin-bottom: 1rem;
+        }
+
         /* CTA Section */
         .cta-section {
             background: linear-gradient(135deg, #ffd700 0%, #ffb347 100%);
-            padding: 60px 2rem;
             text-align: center;
         }
 
@@ -238,12 +532,10 @@
         .footer {
             background: #333;
             color: white;
-            padding: 40px 2rem 20px;
+            padding: 40px 0 20px;
         }
 
         .footer-content {
-            max-width: 1200px;
-            margin: 0 auto;
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
             gap: 2rem;
@@ -299,26 +591,28 @@
                 font-size: 2.2rem;
             }
 
-            .cta-buttons {
-                flex-direction: column;
-                align-items: center;
-            }
-
-            .features-grid {
+            .form-row {
                 grid-template-columns: 1fr;
             }
 
-            .services-grid {
+            .checkbox-group {
+                grid-template-columns: 1fr;
+            }
+
+            .about-content {
+                grid-template-columns: 1fr;
+            }
+
+            .filter-row {
+                grid-template-columns: 1fr;
+            }
+
+            .kost-grid {
                 grid-template-columns: 1fr;
             }
         }
 
-        /* Smooth Scrolling */
-        html {
-            scroll-behavior: smooth;
-        }
-
-        /* Animation */
+        /* Animations */
         @keyframes fadeInUp {
             from {
                 opacity: 0;
@@ -330,8 +624,39 @@
             }
         }
 
+        @keyframes pulse {
+            0%, 100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.05);
+            }
+        }
+
         .animate-on-scroll {
             animation: fadeInUp 0.6s ease forwards;
+        }
+
+        .pulse {
+            animation: pulse 2s infinite;
+        }
+
+        /* Smooth Scrolling */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Map Container */
+        .map-container {
+            height: 300px;
+            background: #e3f2fd;
+            border-radius: 15px;
+            margin-bottom: 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #666;
+            font-size: 1.2rem;
         }
     </style>
 </head>
@@ -339,14 +664,14 @@
     <!-- Navigation -->
     <nav class="navbar">
         <div class="nav-container">
-            <a href="#" class="logo">GoKost</a>
+            <a href="#beranda" class="logo">GoKost</a>
             <ul class="nav-menu" id="nav-menu">
                 <li><a href="#beranda">Beranda</a></li>
                 <li><a href="#layanan">Layanan</a></li>
                 <li><a href="#cari-kost">Cari Kost</a></li>
                 <li><a href="#konsultasi">Konsultasi Personal</a></li>
                 <li><a href="#survei">Survei Kos</a></li>
-                <li><a href="#testimoni">Testimoni</a></li>
+                <li><a href="#premium">Premium</a></li>
                 <li><a href="#tentang">Tentang Kami</a></li>
                 <li><a href="#kontak">Kontak</a></li>
             </ul>
@@ -359,17 +684,17 @@
     <!-- Hero Section -->
     <section class="hero" id="beranda">
         <div class="container">
-            <h1>Cari kos? Biarkan kami yang bantu.</h1>
-            <p>Platform terpercaya untuk menemukan kost impian Anda dengan mudah dan aman</p>
+            <h1>Cari kos di Surabaya? Biarkan kami yang bantu.</h1>
+            <p>Platform terpercaya untuk menemukan kost impian di Surabaya</p>
             <div class="cta-buttons">
                 <a href="#konsultasi" class="btn btn-primary">Mulai Konsultasi</a>
-                <a href="#layanan" class="btn btn-secondary">Lihat Kos Terverifikasi</a>
+                <a href="#cari-kost" class="btn btn-secondary">Lihat Kos Terverifikasi</a>
             </div>
         </div>
     </section>
 
     <!-- Why GoKost Section -->
-    <section class="why-gokost" id="mengapa">
+    <section class="section why-gokost" id="mengapa">
         <div class="container">
             <h2 class="section-title">Kenapa GoKost?</h2>
             <div class="features-grid">
@@ -378,35 +703,35 @@
                         <i class="fas fa-comments"></i>
                     </div>
                     <h3>Konsultasi Gratis & Personal</h3>
-                    <p>Dapatkan konsultasi gratis dari tim ahli kami yang memahami kebutuhan spesifik Anda dalam mencari kost yang tepat.</p>
+                    <p>Dapatkan konsultasi gratis dari tim ahli kami yang memahami kebutuhan spesifik Anda dalam mencari kost yang tepat di Surabaya.</p>
                 </div>
                 <div class="feature-card animate-on-scroll">
                     <div class="feature-icon">
                         <i class="fas fa-video"></i>
                     </div>
                     <h3>Survei Real-time dengan Video & Foto</h3>
-                    <p>Lihat kondisi kost secara real-time melalui video dan foto terbaru yang kami ambil langsung dari lokasi.</p>
+                    <p>Lihat kondisi kost secara real-time melalui video dan foto terbaru yang kami ambil langsung dari lokasi di Surabaya.</p>
                 </div>
                 <div class="feature-card animate-on-scroll">
                     <div class="feature-icon">
                         <i class="fas fa-bullseye"></i>
                     </div>
                     <h3>Rekomendasi Sesuai Kebutuhan</h3>
-                    <p>Sistem rekomendasi cerdas yang menyesuaikan pilihan kost berdasarkan preferensi dan budget Anda.</p>
+                    <p>Sistem rekomendasi cerdas yang menyesuaikan pilihan kost berdasarkan preferensi dan budget Anda, dekat kampus pilihan.</p>
                 </div>
                 <div class="feature-card animate-on-scroll">
                     <div class="feature-icon">
                         <i class="fas fa-users"></i>
                     </div>
                     <h3>Tim Profesional & Lokal Area</h3>
-                    <p>Tim profesional yang berpengalaman dan mengenal area lokal dengan baik untuk memberikan rekomendasi terbaik.</p>
+                    <p>Tim profesional yang berpengalaman dan mengenal area Surabaya dengan baik untuk memberikan rekomendasi terbaik.</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Services Section -->
-    <section class="services" id="layanan">
+    <section class="section services" id="layanan">
         <div class="container">
             <h2 class="section-title">Layanan Unggulan</h2>
             <div class="services-grid">
@@ -414,11 +739,13 @@
                     <i class="fas fa-home"></i>
                     <h3>Konsultasi Kos</h3>
                     <p>Konsultasi personal untuk menemukan kost yang sesuai dengan kebutuhan dan budget Anda</p>
+                    <a href="#konsultasi" class="btn btn-primary btn-sm" style="margin-top: 1rem;">Konsultasi</a>
                 </div>
                 <div class="service-card animate-on-scroll">
                     <i class="fas fa-search"></i>
                     <h3>Survei Lapangan</h3>
                     <p>Survei langsung ke lokasi kost dengan dokumentasi lengkap berupa foto dan video</p>
+                    <a href="#survei" class="btn btn-primary btn-sm" style="margin-top: 1rem;">Survei</a>
                 </div>
                 <div class="service-card animate-on-scroll">
                     <i class="fas fa-crown"></i>
@@ -427,30 +754,556 @@
                 </div>
                 <div class="service-card animate-on-scroll">
                     <i class="fas fa-graduation-cap"></i>
-                    <h3>Rekomendasi Berdasarkan Jurusan/Kampus</h3>
-                    <p>Rekomendasi kost strategis berdasarkan lokasi kampus dan jurusan yang Anda ambil</p>
+                    <h3>Rekomendasi Berdasarkan Kampus</h3>
+                    <p>Rekomendasi kost strategis dekat UNAIR, ITS, UNESA, atau UNTAG</p>
+                </div>
+                <div class="service-card animate-on-scroll">
+                    <i class="fas fa-search-location"></i>
+                    <h3>Cari Kost</h3>
+                    <p>Temukan kost impian dengan filter lokasi, harga, dan fasilitas sesuai kebutuhan Anda</p>
+                    <a href="#cari-kost" class="btn btn-primary btn-sm" style="margin-top: 1rem;">Cari Sekarang</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Konsultasi Section -->
+    <section class="section konsultasi" id="konsultasi">
+        <div class="container">
+            <h2 class="section-title">Konsultasi Kos Personal</h2>
+            <p style="text-align: center; font-size: 1.2rem; margin-bottom: 3rem;">
+                Setelah memesan jasa konsultasi, dalam waktu maksimal 12 jam Anda akan menerima dokumen berisi rekomendasi kost yang sesuai dengan kebutuhan Anda.
+            </p>
+            <div class="form-container">
+                <form id="konsultasiForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="lokasi">Lokasi yang Diinginkan</label>
+                            <input type="text" id="lokasi" name="lokasi" class="form-control" placeholder="Contoh: Dekat UNAIR Surabaya" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="budget">Budget per Bulan</label>
+                            <select id="budget" name="budget" class="form-control" required>
+                                <option value="">Pilih Budget</option>
+                                <option value="< 500rb">< Rp 500.000</option>
+                                <option value="500rb - 1jt">Rp 500.000 - 1.000.000</option>
+                                <option value="1jt - 1.5jt">Rp 1.000.000 - 1.500.000</option>
+                                <option value="1.5jt - 2jt">Rp 1.500.000 - 2.000.000</option>
+                                <option value="> 2jt">> Rp 2.000.000</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="gender">Gender</label>
+                            <select id="gender" name="gender" class="form-control" required>
+                                <option value="">Pilih Gender</option>
+                                <option value="Putra">Putra</option>
+                                <option value="Putri">Putri</option>
+                                <option value="Campur">Campur</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="durasi">Durasi Sewa</label>
+                            <select id="durasi" name="durasi" class="form-control" required>
+                                <option value="">Pilih Durasi</option>
+                                <option value="1 bulan">1 Bulan</option>
+                                <option value="3 bulan">3 Bulan</option>
+                                <option value="6 bulan">6 Bulan</option>
+                                <option value="1 tahun">1 Tahun</option>
+                                <option value="> 1 tahun">> 1 Tahun</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Fasilitas yang Diinginkan</label>
+                        <div class="checkbox-group">
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="ac" name="facilities" value="AC">
+                                <label for="ac">AC</label>
+                            </div>
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="kamarmandi" name="facilities" value="Kamar Mandi Dalam">
+                                <label for="kamarmandi">Kamar Mandi Dalam</label>
+                            </div>
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="wifi" name="facilities" value="WiFi">
+                                <label for="wifi">WiFi</label>
+                            </div>
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="parkir" name="facilities" value="Parkir">
+                                <label for="parkir">Tempat Parkir</label>
+                            </div>
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="dapur" name="facilities" value="Dapur Bersama">
+                                <label for="dapur">Dapur Bersama</label>
+                            </div>
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="laundry" name="facilities" value="Laundry">
+                                <label for="laundry">Laundry</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="catatan">Catatan Tambahan</label>
+                        <textarea id="catatan" name="catatan" class="form-control" rows="3" placeholder="Ceritakan kebutuhan khusus Anda..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 1rem;">
+                        <i class="fas fa-calendar-check"></i> Jadwalkan Konsultasi Gratis
+                    </button>
+                </form>
+                <div id="konsultasiResult" class="result-box">
+                    <h3><i class="fas fa-check-circle"></i> Terima Kasih!</h3>
+                    <p>Konsultasi Anda telah berhasil dijadwalkan. Dalam waktu maksimal 12 jam, Anda akan menerima dokumen berisi rekomendasi kost yang sesuai dengan kebutuhan Anda via WhatsApp.</p>
+                    <h4>E-Receipt Konsultasi</h4>
+                    <div id="konsultasiData"></div>
+                    <p><strong>Jadwal Konsultasi:</strong> Dalam 1x12 jam</p>
+                    <p><strong>Tim Konsultan:</strong> Specialist Area Surabaya & Sekitarnya</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Survei Section -->
+    <section class="section survei" id="survei">
+        <div class="container">
+            <h2 class="section-title">Survei Lapangan</h2>
+            <p style="text-align: center; font-size: 1.2rem; margin-bottom: 3rem;">
+                Tidak bisa survey langsung? Tenang, biar tim GoKost yang survey untuk Anda di Surabaya!
+            </p>
+            
+            <div class="process-steps">
+                <div class="step-card animate-on-scroll">
+                    <div class="step-number">1</div>
+                    <i class="fas fa-paper-plane" style="font-size: 2rem; color: #667eea; margin-bottom: 1rem;"></i>
+                    <h3>Kirim Permintaan</h3>
+                    <p>Kirim alamat kost yang ingin disurvey atau minta rekomendasi dari kami</p>
+                </div>
+                <div class="step-card animate-on-scroll">
+                    <div class="step-number">2</div>
+                    <i class="fas fa-clock" style="font-size: 2rem; color: #667eea; margin-bottom: 1rem;"></i>
+                    <h3>Tim Survey dalam 1-2 Hari</h3>
+                    <p>Tim profesional kami akan survey lokasi dalam waktu maksimal 2 hari kerja</p>
+                </div>
+                <div class="step-card animate-on-scroll">
+                    <div class="step-number">3</div>
+                    <i class="fas fa-camera" style="font-size: 2rem; color: #667eea; margin-bottom: 1rem;"></i>
+                    <h3>Dokumentasi Lengkap</h3>
+                    <p>Dapatkan foto HD, video tour, dan review detail kondisi kost</p>
+                </div>
+                <div class="step-card animate-on-scroll">
+                    <div class="step-number">4</div>
+                    <i class="fas fa-file-alt" style="font-size: 2rem; color: #667eea; margin-bottom: 1rem;"></i>
+                    <h3>Laporan Detail</h3>
+                    <p>Laporan lengkap termasuk plus minus, rekomendasi, dan info penting lainnya</p>
+                </div>
+            </div>
+
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin: 3rem 0;">
+                <div class="price-card">
+                    <h3>Survei Satuan</h3>
+                    <div class="price">Rp 30.000/kos</div>
+                    <p>Survei lengkap untuk 1 kost dengan dokumentasi foto, video, dan laporan detail</p>
+                    <a href="survey-form.html" class="btn btn-primary btn-sm">Pesan Survei</a>
+                </div>
+                <div class="price-card">
+                    <h3>Paket Survei Bulk</h3>
+                    <div class="price">Rp 50.000/3 kos</div>
+                    <p>Hemat lebih banyak! Survei 3 kost sekaligus dengan laporan lengkap</p>
+                    <a href="#konsultasi" class="btn btn-primary btn-sm">Pesan Paket</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Premium Section -->
+    <section class="section premium" id="premium">
+        <div class="container">
+            <h2 class="section-title" style="color: #333;">Penawaran Premium untuk Pemilik Kos</h2>
+            <p style="text-align: center; font-size: 1.2rem; margin-bottom: 3rem; color: #555;">
+                Ingin kosmu dilihat lebih banyak mahasiswa di Surabaya? Tingkatkan visibilitas dengan paket premium kami!
+            </p>
+            <div class="premium-features">
+                <div class="premium-card animate-on-scroll">
+                    <h3>Paket Listing Premium</h3>
+                    <p>Tampilkan kos Anda di posisi teratas pencarian dengan badge verifikasi dan promosi khusus di platform kami.</p>
+                    <ul style="list-style: none; padding: 0; margin: 1rem 0;">
+                        <li><i class="fas fa-check" style="color: #4caf50; margin-right: 0.5rem;"></i> Prioritas di halaman pencarian</li>
+                        <li><i class="fas fa-check" style="color: #4caf50; margin-right: 0.5rem;"></i> Badge "Premium Listing"</li>
+                        <li><i class="fas fa-check" style="color: #4caf50; margin-right: 0.5rem;"></i> Promosi di media sosial</li>
+                    </ul>
+                    <a href="https://wa.me/+6282197540195" class="btn btn-primary btn-sm">Hubungi untuk Kerja Sama</a>
+                </div>
+                <div class="premium-card animate-on-scroll">
+                    <h3>Bundling Survei & Listing</h3>
+                    <p>Kombinasi survei profesional dan listing premium untuk menarik lebih banyak penyewa.</p>
+                    <ul style="list-style: none; padding: 0; margin: 1rem 0;">
+                        <li><i class="fas fa-check" style="color: #4caf50; margin-right: 0.5rem;"></i> Survei lengkap dengan foto & video</li>
+                        <li><i class="fas fa-check" style="color: #4caf50; margin-right: 0.5rem;"></i> Laporan detail untuk penyewa</li>
+                        <li><i class="fas fa-check" style="color: #4caf50; margin-right: 0.5rem;"></i> Listing premium 1 bulan</li>
+                    </ul>
+                    <a href="https://wa.me/+6282197540195" class="btn btn-primary btn-sm">Hubungi untuk Kerja Sama</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cari Kost Section -->
+    <section class="section cari-kost" id="cari-kost">
+        <div class="container">
+            <h2 class="section-title">Cari Kost Impian Anda</h2>
+            <div class="search-container">
+                <div class="filter-row">
+                    <div class="form-group">
+                        <label for="filter-lokasi">Lokasi</label>
+                        <input type="text" id="filter-lokasi" class="form-control" placeholder="Contoh: Surabaya, dekat ITS">
+                    </div>
+                    <div class="form-group">
+                        <label for="filter-budget">Budget per Bulan</label>
+                        <select id="filter-budget" class="form-control">
+                            <option value="">Semua Budget</option>
+                            <option value="< 500rb">< Rp 500.000</option>
+                            <option value="500rb - 1jt">Rp 500.000 - 1.000.000</option>
+                            <option value="1jt - 1.5jt">Rp 1.000.000 - 1.500.000</option>
+                            <option value="1.5jt - 2jt">Rp 1.500.000 - 2.000.000</option>
+                            <option value="> 2jt">> Rp 2.000.000</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="filter-gender">Gender</label>
+                        <select id="filter-gender" class="form-control">
+                            <option value="">Semua Gender</option>
+                            <option value="Putra">Putra</option>
+                            <option value="Putri">Putri</option>
+                            <option value="Campur">Campur</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="filter-jarak">Jarak dari Kampus</label>
+                        <select id="filter-jarak" class="form-control">
+                            <option value="">Semua Jarak</option>
+                            <option value="< 1km">< 1 km</option>
+                            <option value="1-3km">1-3 km</option>
+                            <option value="> 3km">> 3 km</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="filter-kampus">Dekat Kampus</label>
+                        <select id="filter-kampus" class="form-control">
+                            <option value="">Semua Kampus</option>
+                            <option value="UNAIR">UNAIR</option>
+                            <option value="ITS">ITS</option>
+                            <option value="UNESA">UNESA</option>
+                            <option value="UNTAG">UNTAG</option>
+                            <option value="UNTAG">UPN</option>
+                            <option value="UNTAG">POLTEKKES</option>
+                            <option value="UNTAG">ITS Manyar</option>
+                            <option value="UNTAG">Universitas Dinamika</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>Fasilitas</label>
+                    <div class="checkbox-group">
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="filter-ac" value="AC">
+                            <label for="filter-ac">AC</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="filter-kamarmandi" value="Kamar Mandi Dalam">
+                            <label for="filter-kamarmandi">Kamar Mandi Dalam</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="filter-wifi" value="WiFi">
+                            <label for="filter-wifi">WiFi</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="filter-parkir" value="Parkir">
+                            <label for="filter-parkir">Tempat Parkir</label>
+                        </div>
+                    </div>
+                </div>
+                <button class="btn btn-primary" style="width: 100%; margin-top: 1rem;">
+                    <i class="fas fa-search"></i> Cari Sekarang
+                </button>
+            </div>
+            <div class="map-container">
+                Peta Interaktif (Integrasi Google Maps akan ditambahkan)
+            </div>
+            <div class="kost-grid">
+    <!-- Kost yang sudah ada -->
+    <div class="kost-card animate-on-scroll">
+        <div class="kost-image">K</div>
+        <div class="kost-content">
+            <div class="verified-badge">Sudah Disurvei GoKost</div>
+            <h3 class="kost-title">Kost UNAIR Premium</h3>
+            <div class="kost-price">Rp 1.800.000/bulan</div>
+            <p>300m dari UNAIR Kampus C, lokasi strategis</p>
+            <div class="kost-features">
+                <span class="feature-tag">WiFi</span>
+                <span class="feature-tag">AC</span>
+                <span class="feature-tag">Kamar Mandi Dalam</span>
+                <span class="feature-tag">Parkir</span>
+                <span class="feature-tag">Laundry</span>
+            </div>
+            <div class="kost-actions">
+                <a href="survey-form.html" class="btn btn-primary btn-sm">Minta Survei</a>
+                <a href="purchase.html?kost=UNAIR-Premium&price=1800000&location=300m dari UNAIR Kampus C&facilities=WiFi,AC,Kamar Mandi Dalam,Parkir,Laundry&verified=true" class="btn btn-secondary btn-sm">Langsung Pesan</a>
+            </div>
+        </div>
+    </div>
+    <div class="kost-card animate-on-scroll">
+        <div class="kost-image">K</div>
+        <div class="kost-content">
+            <div class="verified-badge">Sudah Disurvei GoKost</div>
+            <h3 class="kost-title">Kost ITS Nyaman</h3>
+            <div class="kost-price">Rp 1.200.000/bulan</div>
+            <p>500m dari ITS Sukolilo, aman dan nyaman</p>
+            <div class="kost-features">
+                <span class="feature-tag">WiFi</span>
+                <span class="feature-tag">Dapur Bersama</span>
+                <span class="feature-tag">Kamar Mandi Dalam</span>
+                <span class="feature-tag">Parkir</span>
+            </div>
+            <div class="kost-actions">
+                <a href="survey-form.html" class="btn btn-primary btn-sm">Minta Survei</a>
+                <a href="purchase.html?kost=ITS-Nyaman&price=1200000&location=500m dari ITS Sukolilo&facilities=WiFi,Dapur Bersama,Kamar Mandi Dalam,Parkir&verified=true" class="btn btn-secondary btn-sm">Langsung Pesan</a>
+            </div>
+        </div>
+    </div>
+    <div class="kost-card animate-on-scroll">
+        <div class="kost-image">K</div>
+        <div class="kost-content">
+            <div class="verified-badge">Sudah Disurvei GoKost</div>
+            <h3 class="kost-title">Kost UNESA Ekonomis</h3>
+            <div class="kost-price">Rp 900.000/bulan</div>
+            <p>700m dari UNESA Ketintang, cocok untuk mahasiswa</p>
+            <div class="kost-features">
+                <span class="feature-tag">WiFi</span>
+                <span class="feature-tag">Dapur Bersama</span>
+                <span class="feature-tag">Laundry</span>
+            </div>
+            <div class="kost-actions">
+                <a href="survey-form.html" class="btn btn-primary btn-sm">Minta Survei</a>
+                <a href="purchase.html?kost=UNESA-Ekonomis&price=900000&location=700m dari UNESA Ketintang&facilities=WiFi,Dapur Bersama,Laundry&verified=true" class="btn btn-secondary btn-sm">Langsung Pesan</a>
+            </div>
+        </div>
+    </div>
+    <div class="kost-card animate-on-scroll">
+        <div class="kost-image">K</div>
+        <div class="kost-content">
+            <div class="verified-badge">Sudah Disurvei GoKost</div>
+            <h3 class="kost-title">Kost UNTAG Exclusive</h3>
+            <div class="kost-price">Rp 1.600.000/bulan</div>
+            <p>400m dari UNTAG Surabaya, fasilitas lengkap</p>
+            <div class="kost-features">
+                <span class="feature-tag">WiFi</span>
+                <span class="feature-tag">AC</span>
+                <span class="feature-tag">Kamar Mandi Dalam</span>
+                <span class="feature-tag">Parkir</span>
+            </div>
+            <div class="kost-actions">
+                <a href="survey-form.html" class="btn btn-primary btn-sm">Minta Survei</a>
+                <a href="purchase.html?kost=UNTAG-Exclusive&price=1600000&location=400m dari UNTAG Surabaya&facilities=WiFi,AC,Kamar Mandi Dalam,Parkir&verified=true" class="btn btn-secondary btn-sm">Langsung Pesan</a>
+            </div>
+        </div>
+    </div>
+    <div class="kost-card animate-on-scroll">
+        <div class="kost-image">K</div>
+        <div class="kost-content">
+            <h3 class="kost-title">Kost Surabaya Barat</h3>
+            <div class="kost-price">Rp 1.000.000/bulan</div>
+            <p>1km dari UNESA Lidah Wetan, lingkungan tenang</p>
+            <div class="kost-features">
+                <span class="feature-tag">WiFi</span>
+                <span class="feature-tag">Dapur Bersama</span>
+                <span class="feature-tag">Parkir</span>
+                <span class="feature-tag">Laundry</span>
+            </div>
+            <div class="kost-actions">
+                <a href="survey-form.html" class="btn btn-primary btn-sm">Minta Survei</a>
+                <a href="purchase.html?kost=Surabaya-Barat&price=1000000&location=1km dari UNESA Lidah Wetan&facilities=WiFi,Dapur Bersama,Parkir,Laundry&verified=false" class="btn btn-secondary btn-sm">Langsung Pesan</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Kost baru yang ditambahkan -->
+    <div class="kost-card animate-on-scroll">
+        <div class="kost-image">K</div>
+        <div class="kost-content">
+            <div class="verified-badge">Sudah Disurvei GoKost</div>
+            <h3 class="kost-title">Kost UPN Veteran</h3>
+            <div class="kost-price">Rp 1.400.000/bulan</div>
+            <p>350m dari UPN Veteran Surabaya, akses mudah</p>
+            <div class="kost-features">
+                <span class="feature-tag">WiFi</span>
+                <span class="feature-tag">AC</span>
+                <span class="feature-tag">Kamar Mandi Dalam</span>
+                <span class="feature-tag">Dapur Bersama</span>
+            </div>
+            <div class="kost-actions">
+                <a href="survey-form.html" class="btn btn-primary btn-sm">Minta Survei</a>
+                <a href="purchase.html?kost=UPN-Veteran&price=1400000&location=350m dari UPN Veteran Surabaya&facilities=WiFi,AC,Kamar Mandi Dalam,Dapur Bersama&verified=true" class="btn btn-secondary btn-sm">Langsung Pesan</a>
+            </div>
+        </div>
+    </div>
+    <div class="kost-card animate-on-scroll">
+        <div class="kost-image">K</div>
+        <div class="kost-content">
+            <h3 class="kost-title">Kost POLTEKKES Surabaya</h3>
+            <div class="kost-price">Rp 850.000/bulan</div>
+            <p>600m dari POLTEKKES Surabaya, harga terjangkau</p>
+            <div class="kost-features">
+                <span class="feature-tag">WiFi</span>
+                <span class="feature-tag">Dapur Bersama</span>
+                <span class="feature-tag">Laundry</span>
+            </div>
+            <div class="kost-actions">
+                <a href="survey-form.html" class="btn btn-primary btn-sm">Minta Survei</a>
+                <a href="purchase.html?kost=POLTEKKES-Surabaya&price=850000&location=600m dari POLTEKKES Surabaya&facilities=WiFi,Dapur Bersama,Laundry&verified=false" class="btn btn-secondary btn-sm">Langsung Pesan</a>
+            </div>
+        </div>
+    </div>
+    <div class="kost-card animate-on-scroll">
+        <div class="kost-image">K</div>
+        <div class="kost-content">
+            <div class="verified-badge">Sudah Disurvei GoKost</div>
+            <h3 class="kost-title">Kost ITS Manyar Elite</h3>
+            <div class="kost-price">Rp 1.900.000/bulan</div>
+            <p>200m dari ITS Manyar, fasilitas premium</p>
+            <div class="kost-features">
+                <span class="feature-tag">WiFi</span>
+                <span class="feature-tag">AC</span>
+                <span class="feature-tag">Kamar Mandi Dalam</span>
+                <span class="feature-tag">Parkir</span>
+                <span class="feature-tag">Laundry</span>
+            </div>
+            <div class="kost-actions">
+                <a href="survey-form.html" class="btn btn-primary btn-sm">Minta Survei</a>
+                <a href="purchase.html?kost=ITS-Manyar-Elite&price=1900000&location=200m dari ITS Manyar&facilities=WiFi,AC,Kamar Mandi Dalam,Parkir,Laundry&verified=true" class="btn btn-secondary btn-sm">Langsung Pesan</a>
+            </div>
+        </div>
+    </div>
+    <div class="kost-card animate-on-scroll">
+        <div class="kost-image">K</div>
+        <div class="kost-content">
+            <h3 class="kost-title">Kost Universitas Dinamika</h3>
+            <div class="kost-price">Rp 1.000.000/bulan</div>
+            <p>800m dari Universitas Dinamika, lingkungan asri</p>
+            <div class="kost-features">
+                <span class="feature-tag">WiFi</span>
+                <span class="feature-tag">Dapur Bersama</span>
+                <span class="feature-tag">Parkir</span>
+            </div>
+            <div class="kost-actions">
+                <a href="survey-form.html" class="btn btn-primary btn-sm">Minta Survei</a>
+                <a href="purchase.html?kost=Universitas-Dinamika&price=1000000&location=800m dari Universitas Dinamika&facilitate=WiFi,Dapur Bersama,Parkir&verified=false" class="btn btn-secondary btn-sm">Langsung Pesan</a>
+            </div>
+        </div>
+    </div>
+    <div class="kost-card animate-on-scroll">
+        <div class="kost-image">K</div>
+        <div class="kost-content">
+            <div class="verified-badge">Sudah Disurvei GoKost</div>
+            <h3 class="kost-title">Kost UNAIR B Anyar</h3>
+            <div class="kost-price">Rp 1.700.000/bulan</div>
+            <p>450m dari UNAIR Kampus B, fasilitas lengkap</p>
+            <div class="kost-features">
+                <span class="feature-tag">WiFi</span>
+                <span class="feature-tag">AC</span>
+                <span class="feature-tag">Kamar Mandi Dalam</span>
+                <span class="feature-tag">Parkir</span>
+                <span class="feature-tag">Dapur Bersama</span>
+            </div>
+            <div class="kost-actions">
+                <a href="survey-form.html" class="btn btn-primary btn-sm">Minta Survei</a>
+                <a href="purchase.html?kost=UNAIR-B-Anyar&price=1700000&location=450m dari UNAIR Kampus B&facilitate=WiFi,AC,Kamar Mandi Dalam,Parkir,Dapur Bersama&verified=true" class="btn btn-secondary btn-sm">Langsung Pesan</a>
+            </div>
+        </div>
+    </div>
+    <div class="kost-card animate-on-scroll">
+        <div class="kost-image">K</div>
+        <div class="kost-content">
+            <h3 class="kost-title">Kost Rungkut Asri</h3>
+            <div class="kost-price">Rp 950.000/bulan</div>
+            <p>1.5km dari UPN Surabaya, cocok untuk karyawan</p>
+            <div class="kost-features">
+                <span class="feature-tag">WiFi</span>
+                <span class="feature-tag">Dapur Bersama</span>
+                <span class="feature-tag">Laundry</span>
+                <span class="feature-tag">Parkir</span>
+            </div>
+            <div>
+            <div class="kost-actions">
+                <a href="survey-form.html" class="btn btn-primary btn-sm">Minta Survei</a>
+                <a href="purchase.html?kost=Rungkut-Asri&price=950000&location=1.5km dari UPN Surabaya&facilitate=WiFi,Dapur Bersama,Laundry,Parkir&verified=false" class="btn btn-secondary btn-sm">Langsung Pesan</a>
+            </div>
+        </div>
+    </div>
+    <div class="kost-card animate-on-scroll">
+        <div class="kost-image">K</div>
+        <div class="kost-content">
+            <div class="verified-badge">Sudah Disurvei GoKost</div>
+            <h3 class="kost-title">Kost ITS Sukolilo Baru</h3>
+            <div class="kost-price">Rp 1.000.000/bulan</div>
+            <p>600m dari ITS Sukolilo, lingkungan nyaman</p>
+            <div class="kost-features">
+                <span class="feature-tag">WiFi</span>
+                <span class="feature-tag">AC</span>
+                <span class="feature-tag">Kamar Mandi Dalam</span>
+            </div>
+            <div class="kost-actions">
+                <a href="survey-form.html" class="btn btn-primary btn-sm">Minta Survei</a>
+                <a href="purchase.html?kost=ITS-Sukolilo-Baru&price=1300000&location=600m dari ITS Sukolilo&facilitate=WiFi,AC,Kamar Mandi Dalam&verified=true" class="btn btn-secondary btn-sm">Langsung Pesan</a>
+            </div>
+        </div>
+    </div>
+</div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section about" id="tentang">
+        <div class="container">
+            <h2 class="section-title">Tentang Kami</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Awal Minta GoKost</h3>
+                    <p>GoKost lahir dari pengalaman pribadi tim kami yang pernah kesulitan mencari kost ideal saat kuliah di Surabaya. Kami memahami betapa pentingnya tempat tinggal yang nyaman dan strategis untuk mendukung aktivitas mahasiswa, terutama di sekitar UNAIR, ITS, UNESA, dan UNTAG. Dengan visi menjadikan proses pencarian kost lebih mudah, aman, dan transparan, GoKost hadir untuk membantu mahasiswa dan pemilik kost terhubung secara efektif.</p>
+                    <p>Tim kami terdiri dari para profesional lokal yang mengenal area Surabaya dengan baik, siap memberikan rekomendasi terbaik dan layanan survei yang terpercaya.</p>
+                </div>
+                <div class="about-image" style="background: linear-gradient(45deg, #667eea, #764ba2); height: 300px; border-radius: 15px; display: flex; align-items: center; justify-content: center; color: white; font-size: 2rem;">
+                    Tim GoKost
+                </div>
+            </div>
+            <div class="values-grid">
+                <div class="value-card animate-on-scroll">
+                    <div class="value-icon"><i class="fas fa-handshake"></i></div>
+                    <h3>Amanah</h3>
+                    <p>Kami berkomitmen memberikan informasi jujur dan transparan tentang setiap kost yang kami survei.</p>
+                </div>
+                <div class="value-card animate-on-scroll">
+                    <div class="value-icon"><i class="fas fa-clock"></i></div>
+                    <h3>Responsif</h3>
+                    <p>Tim kami siap merespons kebutuhan Anda dengan cepat, baik untuk konsultasi maupun survei.</p>
+                </div>
+                <div class="value-card animate-on-scroll">
+                    <div class="value-icon"><i class="fas fa-star"></i></div>
+                    <h3>Profesional</h3>
+                    <p>Layanan profesional dengan pendekatan personal untuk memastikan kepuasan Anda.</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- CTA Section -->
-    <section class="cta-section" id="konsultasi">
+    <section class="section cta-section">
         <div class="container">
-            <h2>Bingung mulai dari mana? Yuk konsultasi dulu!</h2>
-            <p>Tim ahli kami siap membantu Anda menemukan kost impian dengan mudah dan cepat</p>
-            <div class="cta-buttons">
-                <a href="#" class="btn btn-primary" onclick="chatSekarang()">
-                    <i class="fas fa-whatsapp"></i> Chat Sekarang
-                </a>
-                <a href="#" class="btn btn-secondary" onclick="isiForm()">
-                    <i class="fas fa-edit"></i> Isi Form Konsultasi
-                </a>
-            </div>
+            <h2>Mulai Hari Ini Cari Kost Impian Anda di Surabaya!</h2>
+            <p>Temukan kost yang sesuai dengan kebutuhan Anda dekat UNAIR, ITS, UNESA, atau UNTAG dengan bantuan tim profesional GoKost.</p>
+            <a href="#konsultasi" class="btn btn-primary">Jadualkan Konsultasi Gratis</a>
         </div>
     </section>
-
-    <!-- Footer -->
+ <!-- Footer -->
     <footer class="footer" id="kontak">
         <div class="footer-content">
             <div class="footer-section">
@@ -466,14 +1319,14 @@
             </div>
             <div class="footer-section">
                 <h3>Hubungi Kami</h3>
-                <a href="#"><i class="fas fa-phone"></i> +62 812-3456-7890</a>
+                <a href="https://wa.me/+6282197540195"><i class="fas fa-phone"></i> +62 821-9754-0195</a>
                 <a href="#"><i class="fas fa-envelope"></i> info@gokost.com</a>
-                <a href="#"><i class="fas fa-map-marker-alt"></i> Tambakrejo, Jawa Timur</a>
-                <a href="#"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+                <a href="https://g.co/kgs/mpWVkGH"><i class="fas fa-map-marker-alt"></i> Sukolilo, Jawa Timur</a>
+                <a href="https://wa.me/+6282197540195"><i class="fab fa-whatsapp"></i> WhatsApp</a>
             </div>
             <div class="footer-section">
                 <h3>Ikuti Kami</h3>
-                <a href="#"><i class="fab fa-instagram"></i> Instagram</a>
+                <a href="https://www.instagram.com/gokostofficial_?igsh=ZW4zdHYya2d1cW92"><i class="fab fa-instagram"></i> Instagram</a>
                 <a href="#"><i class="fab fa-facebook"></i> Facebook</a>
                 <a href="#"><i class="fab fa-twitter"></i> Twitter</a>
                 <a href="#"><i class="fab fa-tiktok"></i> TikTok</a>
@@ -485,84 +1338,56 @@
     </footer>
 
     <script>
-        // Mobile Menu Toggle
+        // Mobile menu toggle
         const mobileMenu = document.getElementById('mobile-menu');
         const navMenu = document.getElementById('nav-menu');
 
         mobileMenu.addEventListener('click', () => {
             navMenu.classList.toggle('active');
-            const icon = mobileMenu.querySelector('i');
-            icon.classList.toggle('fa-bars');
-            icon.classList.toggle('fa-times');
         });
 
-        // Smooth scrolling for navigation links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
-                    });
-                }
-                // Close mobile menu if open
-                navMenu.classList.remove('active');
-                const icon = mobileMenu.querySelector('i');
-                icon.classList.add('fa-bars');
-                icon.classList.remove('fa-times');
-            });
+        // Konsultasi form submission
+        const konsultasiForm = document.getElementById('konsultasiForm');
+        const konsultasiResult = document.getElementById('konsultasiResult');
+        const konsultasiData = document.getElementById('konsultasiData');
+        konsultasiForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            
+            const lokasi = document.getElementById('lokasi').value;
+            const budget = document.getElementById('budget').value;
+            const gender = document.getElementById('gender').value;
+            const durasi = document.getElementById('durasi').value;
+            const catatan = document.getElementById('catatan').value;
+            const facilities = Array.from(document.querySelectorAll('.checkbox-group input:checked'))
+                .map(input => input.value);
+
+            konsultasiData.innerHTML = `
+                <p><strong>Lokasi:</strong> ${lokasi || 'Tidak ada'}</p>
+                <p><strong>Budget:</strong> ${budget || 'Rp 0'}</p>
+                <p><strong>Gender:</strong> ${gender || 'Tidak ada'}</p>
+                <p><strong>Durasi Sewa:</strong> ${durasi || 'Tidak ada'}</p>
+                <p><strong>Fasilitas:</strong> ${facilities.join(', ') || 'Tidak ada'}</p>
+                <p><strong>Catatan:</strong> ${catatan || 'Tidak ada'}</p>
+            `;
+
+            konsultasiResult.style.display = 'block';
+            konsultasiForm.reset();
+            konsultasiResult.scrollIntoView({ behavior: 'smooth' });
         });
 
-        // Animation on scroll
-        const observerOptions = {
-            threshold: 0.1,
-            rootMargin: '0px 0px -50px 0px'
-        };
-
+        // Scroll animation trigger
+        const animateOnScroll = document.querySelectorAll('.animate-on-scroll');
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
-                    entry.target.style.opacity = '1';
-                    entry.target.style.transform = 'translateY(0)';
+                    entry.target.style.animationPlayState = 'running';
                 }
             });
-        }, observerOptions);
+        }, { threshold: 0.1 });
 
-        // Observe all animate-on-scroll elements
-        document.querySelectorAll('.animate-on-scroll').forEach(el => {
-            el.style.opacity = '0';
-            el.style.transform = 'translateY(30px)';
-            el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
-            observer.observe(el);
-        });
-
-        // CTA Button Functions
-        function chatSekarang() {
-            // Replace with your WhatsApp number
-            const phoneNumber = '6281234567890';
-            const message = 'Halo, saya tertarik untuk konsultasi tentang pencarian kost melalui GoKost.';
-            const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
-            window.open(whatsappURL, '_blank');
-        }
-
-        function isiForm() {
-            // Placeholder for form modal or redirect to form page
-            alert('Form konsultasi akan segera tersedia. Untuk sementara, silakan hubungi kami melalui WhatsApp.');
-            chatSekarang();
-        }
-
-        // Navbar background change on scroll
-        window.addEventListener('scroll', () => {
-            const navbar = document.querySelector('.navbar');
-            if (window.scrollY > 50) {
-                navbar.style.background = 'rgba(102, 126, 234, 0.95)';
-                navbar.style.backdropFilter = 'blur(10px)';
-            } else {
-                navbar.style.background = 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)';
-                navbar.style.backdropFilter = 'none';
-            }
+        animateOnScroll.forEach(element => {
+            element.style.animationPlayState = 'paused';
+            observer.observe(element);
         });
     </script>
 </body>
